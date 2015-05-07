@@ -64,22 +64,41 @@ public class player_control : MonoBehaviour {
 
 		}
 
-		moveVeloc = 0f; // set ke 0 supaya kecepatan kembali default.
+		 // set ke 0 supaya kecepatan kembali default.
+		 
 
 		if (Input.GetKey (KeyCode.LeftArrow) || btnKiri) 
 		{
-			moveVeloc = -moveSpeed; // kec ke arah kiri
+			moveVeloc = -moveSpeed ; // kec ke arah kiri
 		}
 		if (Input.GetKey (KeyCode.RightArrow) || btnKanan) 
 		{
-	    	moveVeloc =  moveSpeed; // kec ke arah kanan
+			moveVeloc =  moveSpeed ; // kec ke arah kanan
+		}
+
+		if (Input.GetKeyUp (KeyCode.LeftArrow) || moveVeloc <=0) 
+		{
+			moveVeloc = moveVeloc + (Time.deltaTime * 14f);
+			if (moveVeloc >=0)
+			{
+				moveVeloc = 0f;
+			}
+		}
+
+		if (Input.GetKeyUp (KeyCode.RightArrow) || moveVeloc >=0) 
+		{
+			moveVeloc = moveVeloc - (Time.deltaTime * 14f);
+			if (moveVeloc <=0)
+			{
+				moveVeloc = 0f;
+			}
 		}
 
 
 		if (knockBackCount <= 0) 
 		{
 			// script untuk bergerak sesuai arah kecepatan vektornya.
-			myrigidbody.velocity = new Vector2 (moveVeloc, myrigidbody.velocity.y); 
+			myrigidbody.velocity = new Vector2 (moveVeloc , myrigidbody.velocity.y); 
 		} 
 		else 
 		{
@@ -122,16 +141,6 @@ public class player_control : MonoBehaviour {
 				delayCounter = shotDelay;
 				Instantiate(srkn , firePoint.position , firePoint.rotation);
 			}
-		}
-
-		if (anim.GetBool ("sword_att")) 
-		{
-			anim.SetBool("sword_att" , false);
-		}
-
-		if (Input.GetKey (KeyCode.X)) 
-		{
-			anim.SetBool("sword_att" , true);
 		}
 
 		if (isLadder) 
