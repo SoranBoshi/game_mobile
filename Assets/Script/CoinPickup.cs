@@ -8,6 +8,8 @@ public class CoinPickup : MonoBehaviour {
 
 
 	public int PoinAdd;
+	public float poinWater;
+	public float poinIsotonik;
 
 	void OnTriggerEnter2D (Collider2D other)
 	{
@@ -19,7 +21,6 @@ public class CoinPickup : MonoBehaviour {
 
 		// tambahkan point.
 		Scoremanager.AddPoin (PoinAdd);
-
 		// koin akan menghilang.
 		Destroy (gameObject);
 	}

@@ -57,22 +57,37 @@
      <Compile Include="Assets\Script\Level_Manager.cs" />
      <Compile Include="Assets\Script\LifeManager.cs" />
      <Compile Include="Assets\Script\MaiMenuScript.cs" />
+     <Compile Include="Assets\Script\MovePlatform.cs" />
      <Compile Include="Assets\Script\PauseMenu.cs" />
      <Compile Include="Assets\Script\Scoremanager.cs" />
      <Compile Include="Assets\Script\controlButton.cs" />
+     <Compile Include="Assets\Script\db_manager.cs" />
      <Compile Include="Assets\Script\destroyObject.cs" />
      <Compile Include="Assets\Script\destroyParticle.cs" />
+     <Compile Include="Assets\Script\destroy_all.cs" />
      <Compile Include="Assets\Script\enemyPatrol.cs" />
      <Compile Include="Assets\Script\enemyStomp.cs" />
+     <Compile Include="Assets\Script\faaling_move_plat.cs" />
      <Compile Include="Assets\Script\fall_ground.cs" />
+     <Compile Include="Assets\Script\falling_tra_script.cs" />
+     <Compile Include="Assets\Script\getSkill.cs" />
      <Compile Include="Assets\Script\killPlayer.cs" />
      <Compile Include="Assets\Script\lifeTimeObject.cs" />
      <Compile Include="Assets\Script\ninjaStarControler.cs" />
+     <Compile Include="Assets\Script\pickup_script.cs" />
      <Compile Include="Assets\Script\player_control.cs" />
+     <Compile Include="Assets\Script\spike_appear_script.cs" />
+     <Compile Include="Assets\Script\trampoline.cs" />
      <Compile Include="Assets\fading.cs" />
      <Compile Include="Assets\folowingCamera.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Data.Sqlite">
+ <HintPath>C:/Users/Muhammad Adhi/Documents/Adventure_Game/Assets/database/Mono.Data.Sqlite.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>C:/Users/Muhammad Adhi/Documents/Adventure_Game/Assets/database/System.Data.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

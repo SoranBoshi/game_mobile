@@ -4,6 +4,7 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: tree
     21300002: ground_n
+    21300004: tree2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -62,6 +63,16 @@ TextureImporter:
         y: 7
         width: 461
         height: 146
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tree2
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 150
+        width: 166
+        height: 238
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

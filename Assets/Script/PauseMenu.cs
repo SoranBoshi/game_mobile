@@ -13,7 +13,8 @@ public class PauseMenu : MonoBehaviour {
 	// Use this for initialization
 		
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		if (isPause) 
 		{
 
@@ -39,7 +40,6 @@ public class PauseMenu : MonoBehaviour {
 
 	public IEnumerator QuitButon()
 	{
-
 		float fadeTime = GameObject.Find ("fadingObject").GetComponent<fading> ().BeginFade (1);
 		yield return new WaitForSeconds (fadeTime);
 		Application.LoadLevel(mainMenu);

@@ -9,9 +9,6 @@ public class Knockback : MonoBehaviour {
 
 	void Start () {
 		player = FindObjectOfType<player_control> ();
-
-
-
 	}
 	
 	// Update is called once per frame

@@ -5,7 +5,8 @@ public class LadderZone : MonoBehaviour {
 
 	private player_control aPlayer;
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		aPlayer = FindObjectOfType<player_control> ();
 	}
 	
